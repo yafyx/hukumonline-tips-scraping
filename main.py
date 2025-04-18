@@ -482,7 +482,7 @@ def extract_article_content(article_soup, article_url):
 if __name__ == "__main__":
     # Set max_pages to None to scrape all pages, or an integer for testing
     # Be mindful of the website's resources if scraping all pages.
-    MAX_PAGES_TO_SCRAPE = 8
+    MAX_PAGES_TO_SCRAPE = None
     logging.info(f"Starting scraper for max {MAX_PAGES_TO_SCRAPE} pages...")
 
     scraped_data = scrape_hukumonline_tips(max_pages=MAX_PAGES_TO_SCRAPE)
